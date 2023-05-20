@@ -16,12 +16,12 @@ function binomialCoefficient(n, k) {
 }
 
 function probabilityMassFunction(populationSize, successesInPopulation, sampleSize) {
-    failuresInPopulation = populationSize - successesInPopulation;
-    sampledPopulation = binomialCoefficient(populationSize, sampleSize);
+    let failuresInPopulation = populationSize - successesInPopulation;
+    let sampledPopulation = binomialCoefficient(populationSize, sampleSize);
     return function(successesInSample) {
-        failuresInSample = sampleSize - successesInSample;
-        sampledSuccesses = binomialCoefficient(successesInPopulation, successesInSample);
-        sampledFailures = binomialCoefficient(failuresInPopulation, failuresInSample);
+        let failuresInSample = sampleSize - successesInSample;
+        let sampledSuccesses = binomialCoefficient(successesInPopulation, successesInSample);
+        let sampledFailures = binomialCoefficient(failuresInPopulation, failuresInSample);
         return (sampledSuccesses * sampledFailures) / sampledPopulation;
     }
 }
