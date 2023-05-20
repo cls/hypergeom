@@ -1,0 +1,10 @@
+h1 { text-align: center; }
+table { margin: auto; padding-bottom: 1em; }
+th { text-align: left; }
+td { padding-top: 0.25em; padding-bottom: 0.25em; }
+td.label { font-weight: bold; padding-right: 0.5em; }
+td.submit { text-align: center; }
+input { width: 8em; }
+#result td { text-align: right; }
+#result td.label { padding-left: 1.5em; }
+#result td.label:first-child { padding-left: 0; }

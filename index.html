@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Hypergeometric Calculator</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <script src="script.js"></script>
+</head>
+<body>
+ <h1>Hypergeom</h1>
+ <table>
+  <tr>
+   <td class="label">Population size</th>
+   <td><input id="populationSize" type="number" min="0" value="40"></td>
+  </tr>
+  <tr>
+   <td class="label">Successes in population</th>
+   <td><input id="successesInPopulation" type="number" min="0" value="17"></td>
+  </tr>
+  <tr>
+   <td class="label">Sample size</th>
+   <td><input id="sampleSize" type="number" min="0" value="7"></td>
+  </tr>
+  <tr>
+   <td class="label">Sample attempts</th>
+   <td><input id="sampleAttempts" type="number" min="0" value="1"></td>
+  </tr>
+  <tr>
+   <td class="submit" colspan="2"><input id="submit" type="button" value="Calculate"/></td>
+  </tr>
+ </table>
+ <table id="result">
+ </table>
+</body>
+</html>
